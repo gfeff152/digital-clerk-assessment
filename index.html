@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="第一單元評量：24 小時王牌數位店員。答對才前進，答錯有提示。">
+  <title>第一單元評量｜王牌店員學習站</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%23dc6339'/%3E%3Cpath d='M20 8l3 9 9 3-9 3-3 9-3-9-9-3 9-3z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="questions.js"></script>
+  <script defer src="quiz-core.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a class="brand" href="./index.html" aria-label="王牌店員學習站首頁"><span class="brand-symbol" aria-hidden="true">✦</span><span>王牌店員<span class="brand-sub">學習站 LEARNING STUDIO</span></span></a>
+    <span class="header-note"><span class="online-dot" aria-hidden="true"></span>學習，每次前進一點</span>
+  </header>
+  <main class="layout">
+    <aside class="sidebar" aria-label="單元與通關進度">
+      <span class="eyebrow">LEARN IT. MAKE IT.</span>
+      <h1>讓好服務，<br>隨時<span class="accent">在線。</span></h1>
+      <p class="intro">從顧客的第一句詢問，<br>到每一次貼心推薦。<br>用十道練習，打造你的王牌數位店員。</p>
+      <div class="course-card">
+        <div class="course-top"><span class="chapter" id="chapter">第一單元</span><span class="course-icon" aria-hidden="true">↗</span></div>
+        <h2 id="course-title">24 小時王牌數位店員</h2>
+        <p>即時回覆 · 關鍵字辨識 · 智慧推薦</p>
+        <svg class="store-art" viewBox="0 0 300 140" aria-hidden="true" fill="none">
+          <path d="M15 128h270" stroke="#cdd6c5"/>
+          <path d="M67 35V23h166v12" stroke="#344b3c" stroke-width="2"/>
+          <rect x="51" y="40" width="199" height="88" rx="8" fill="#f8f6ec" stroke="#c3cfb9"/>
+          <path d="M44 35h213v21c0 14-21 14-26 1-5 13-22 13-27 0-5 13-22 13-27 0-5 13-22 13-27 0-5 13-22 13-27 0-5 13-22 13-27 0-5 13-22 13-27 0-5 13-25 13-25-1V35Z" fill="#f0a075"/>
+          <path d="M69 35v22m27-22v22m27-22v22m27-22v22m27-22v22m27-22v22m27-22v22" stroke="#f8cfaa" stroke-width="13"/>
+          <rect x="77" y="78" width="70" height="38" rx="7" fill="#34543f"/>
+          <rect x="83" y="83" width="58" height="27" rx="4" fill="#e4edcc"/>
+          <path d="M97 93v3m29-3v3m-22 6c4 3 9 3 13 0m-5 14v9m-12 0h24" stroke="#34543f" stroke-width="2.5" stroke-linecap="round"/>
+          <rect x="180" y="79" width="46" height="49" rx="3" fill="#dce5d2"/>
+          <path d="M189 91h28m-28 8h18m-18 8h26" stroke="#a6b998" stroke-width="2" stroke-linecap="round"/>
+          <rect x="204" y="1" width="73" height="29" rx="14.5" fill="#34543f"/>
+          <path d="m218 27-4 9 15-9" fill="#34543f"/>
+          <text x="240" y="21" font-family="Arial,sans-serif" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">24 / 7</text>
+          <path d="m26 82 2.5 7.5L36 92l-7.5 2.5L26 102l-2.5-7.5L16 92l7.5-2.5L26 82Z" fill="#dc6339"/>
+        </svg>
+      </div>
+      <section class="progress-section" aria-label="通關進度">
+        <div class="progress-caption"><span>通關進度</span><span><b id="completed-count">0</b><span id="total-caption"> / 10</span></span></div>
+        <div class="progress-track" id="progress" role="progressbar" aria-label="已答對題數" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><div id="progress-fill"></div></div>
+        <ol class="steps" id="steps" aria-label="各題作答狀態"></ol>
+        <p class="progress-tip" id="progress-tip">答對一題，解鎖下一步。</p>
+      </section>
+      <div class="save-info"><span aria-hidden="true">◉</span><span id="storage-status">進度會儲存在此瀏覽器</span></div>
+      <button class="text-button" type="button" id="restart">重新開始 <span aria-hidden="true">↺</span></button>
+    </aside>
+    <section class="main-panel" aria-label="評量作答區">
+      <div class="panel-header"><span id="assessment-label">第一單元評量</span><span class="mode-tag">練習模式</span></div>
+      <div id="question-view" class="question-view">
+        <div class="question-meta"><span class="eyebrow" id="question-counter">QUESTION 01 / 10</span><span class="single-tag">單選題</span></div>
+        <h2 id="question-title" tabindex="-1"></h2>
+        <p class="instruction">選擇一個答案，答對後即可前往下一題。</p>
+        <div id="options" class="options" role="group" aria-labelledby="question-title"></div>
+        <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+        <div class="question-actions"><span id="next-status">這一題答對後，就能繼續。</span><button class="button button-primary" type="button" id="next" disabled><span id="next-label">下一題</span><span aria-hidden="true">→</span></button></div>
+      </div>
+      <div id="completion-view" class="completion-view" hidden>
+        <span class="completion-medal" aria-hidden="true">✦</span>
+        <p class="eyebrow">ALL STEPS COMPLETED</p>
+        <h2 id="completion-title" tabindex="-1"></h2>
+        <p class="completion-description">十道練習，全部通過。<br>把今天學會的，帶進每一次顧客服務。</p>
+        <div class="password-card"><span>這是密碼</span><strong id="password"></strong><button class="copy-button" id="copy-password" type="button">複製密碼 <span aria-hidden="true">⧉</span></button></div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+        <div class="completion-stats"><span><b id="completion-count">10 / 10</b>題已通過</span><span><b>學習達成</b>每一步都算數</span></div>
+        <button type="button" class="button button-outline" id="practice-again">再練習一次 <span aria-hidden="true">↺</span></button>
+      </div>
+      <div class="panel-footer"><span aria-hidden="true">✦</span> 不急著答完，把每一題學會。</div>
+    </section>
+  </main>
+  <footer class="footer"><span>王牌店員學習站 <span aria-hidden="true">/</span> 學以致用，服務升級</span><span>ONE QUESTION. ONE STEP FORWARD.</span></footer>
+  <dialog id="restart-dialog" aria-labelledby="restart-title" aria-describedby="restart-description"><form method="dialog"><span class="dialog-symbol" aria-hidden="true">↺</span><h2 id="restart-title">要從第一題重新開始嗎？</h2><p id="restart-description">目前儲存的作答進度會清除。</p><div class="dialog-actions"><button type="submit" class="button button-outline" value="cancel" autofocus>保留進度</button><button type="submit" class="button button-primary" value="restart">確認重新開始</button></div></form></dialog>
+  <noscript><div class="no-script">請啟用瀏覽器的 JavaScript，才能進行互動評量。</div></noscript>
+</body>
+</html>
