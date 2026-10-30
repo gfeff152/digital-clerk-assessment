@@ -2,7 +2,7 @@ globalThis.QuizData = {
   id: 'vscode-digital-clerk-unit-01-v1',
   number: 1,
   title: '24 小時王牌數位店員',
-  password: '*****',
+  password: '9654',
   questions: [
     { question: '本單元要打造的數位角色是什麼？', options: ['自動結帳系統', '24 小時王牌數位店員', '外送員排班系統', '食材庫存管理員'], answer: 1, hint: '想想這個角色如何協助店家隨時接待顧客，並即時回答問題。', explanation: '本單元的目標是打造「24 小時王牌數位店員」，協助店家全天候服務顧客。' },
     { question: '簡報中，傳統人工回覆顧客的時間通常為何？', options: ['小於 1 秒', '3～5 分鐘', '15～30 分鐘', '1～2 小時'], answer: 2, hint: '人工回覆需要等待，回想簡報提到的時間：以十幾分鐘起算，但還不到一小時。', explanation: '依本單元簡報，傳統人工回覆顧客通常需要 15～30 分鐘。' },
@@ -26,7 +26,7 @@ globalThis.QuizCatalog = [
     "number": 2,
     "title": "負評回應與顧客服務",
     "tagLine": "同理回應 · 具體處置 · 顧客信任",
-    "password": "*****",
+    "password": "9146",
     "questions": [
       {
         "question": "簡報將負評視為什麼？",
@@ -155,7 +155,7 @@ globalThis.QuizCatalog = [
     "number": 3,
     "title": "門市點餐與品牌資訊維護",
     "tagLine": "線上點餐 · 品牌公告 · SOP 教學",
-    "password": "*****",
+    "password": "5468",
     "questions": [
       {
         "question": "顧客已選擇 3 樣免費配菜後，又加選第 4 樣配菜，系統應如何處理？",
@@ -284,7 +284,7 @@ globalThis.QuizCatalog = [
     "number": 4,
     "title": "專業營養底氣與門市實踐",
     "tagLine": "營養觀念 · 食材選擇 · 門市應用",
-    "password": "*****",
+    "password": "6546",
     "questions": [
       {
         "question": "課程開場中，「專業營養底氣」被定位為哪兩個層面之間的連結？",

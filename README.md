@@ -18,7 +18,7 @@
 
 **[直接進入第三章](https://gfeff152.github.io/digital-clerk-assessment/#chapter-3)** · **[直接進入第四章](https://gfeff152.github.io/digital-clerk-assessment/#chapter-4)**。
 
-每一章答對才能前往下一題；完成後顯示對應評量編號與 `*****`。返回選單、重新整理及切換章節都可保留進度。重新開始僅清除目前章節。
+每一章答對才能前往下一題；完成後顯示對應評量編號與該章通關密碼。返回選單、重新整理及切換章節都可保留進度。重新開始僅清除目前章節。
 
 ## 原始碼與 VS Code 專案
 
@@ -26,6 +26,6 @@
 
 完整的 VS Code 開發專案另存於 [assessment-vscode.zip](./assessment-vscode.zip)，含本機預覽伺服器、VS Code 啟動設定、四章題庫、自動測試與驗收紀錄。下載解壓後，以 VS Code 開啟 `assessment-vscode` 資料夾即可。
 
-題目及通關密碼可在 `questions.js` 修改。目前依需求將密碼設為 `*****`。
+題目及各章通關密碼可在 `questions.js` 修改。
 
 此站為教學練習，答案與通關密碼儲存在前端檔案，不適合作為需要保密答案的正式考試。
