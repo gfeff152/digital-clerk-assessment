@@ -4,7 +4,7 @@
 
 - 第一張評量：24 小時王牌數位店員（已開放）。
 - 第二章評量：負評回應與顧客服務（已開放）。
-- 第三章評量：題目待提供。
+- 第三章評量：門市點餐與品牌資訊維護（已開放）。
 - 第四章評量：專業營養底氣與門市實踐（已開放）。
 
 - 每題答對後才能前往下一題。
@@ -16,7 +16,7 @@
 
 **[直接開始評量](https://gfeff152.github.io/digital-clerk-assessment/)**，不需要登入。
 
-**[直接進入第四章](https://gfeff152.github.io/digital-clerk-assessment/#chapter-4)**。
+**[直接進入第三章](https://gfeff152.github.io/digital-clerk-assessment/#chapter-3)** · **[直接進入第四章](https://gfeff152.github.io/digital-clerk-assessment/#chapter-4)**。
 
 每一章答對才能前往下一題；完成後顯示對應評量編號與 `*****`。返回選單、重新整理及切換章節都可保留進度。重新開始僅清除目前章節。
 
